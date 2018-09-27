@@ -1,5 +1,5 @@
-size_t my_strlen(char *str);
+int my_strlen(char *str);
 
-char *my_strcpy(char *dst, const char *src);
+char * my_strcpy( char *dest, char *source );
 
-char *my_strncat(char *dst, const char *src, size_t n);
+char * my_strncat( char *dest, char *source, int n);
