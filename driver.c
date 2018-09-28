@@ -3,8 +3,9 @@
 #include <string.h>
 
 #include "oof.h"
+#include "foo.h"
 
-int main(){
+int main(){ 
   char s1[10] = "wowza";
   char s2[20] = "yurr";
   char *s3 = "shfrail";
@@ -31,4 +32,26 @@ int main(){
   my_strncat(s2, s3, 4);
   printf("    [mine]: %s\n", s2);
   return 0;
+
+  char s4[] = "chipotle", s5[] = "apple", *s6 = "apples", *s7 = "apples";
+  printf("s4: [%s]\n",s4);
+  printf("s5: [%s]\n",s5);
+  printf("s6: [%s]\n",s6);
+  printf("s7: [%s]\n\n",s7);
+
+  printf("Testing strchr(s1, s2)\n");
+  printf("[standard]: \n");
+  printf("    [mine]: \n\n");
+
+  printf("Testing strcmp(s1, s2)\n");
+  printf("[standard]: \n");
+  printf("    [mine]: \n\n");
+
+  printf("Testing strstr(s1, s2)\n");
+  printf("[standard]: \n");
+  printf("    [mine]: \n\n");
+
+  
+
+	  
 }
