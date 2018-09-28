@@ -2,10 +2,9 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "oof.h"
-#include "foo.h"
+#include "mylib.h"
 
-int main(){ 
+int main(){
   char s1[10] = "wowza";
   char s2[20] = "yurr";
   char *s3 = "shfrail";
@@ -31,7 +30,6 @@ int main(){
   strcpy(s2, "yurr");
   my_strncat(s2, s3, 4);
   printf("    [mine]: %s\n", s2);
-  return 0;
 
   char s4[] = "chipotle", s5[] = "apple", *s6 = "apples", *s7 = "apples";
   printf("s4: [%s]\n",s4);
@@ -51,7 +49,6 @@ int main(){
   printf("[standard]: \n");
   printf("    [mine]: \n\n");
 
-  
+  return 0;
 
-	  
 }

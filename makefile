@@ -1,14 +1,11 @@
-all: driver.o oof.o foo.o
-	gcc driver.o oof.o foo.o
+all: driver.o mylib.o
+	gcc driver.o mylib.o
 
-driver.o: driver.c oof.h foo.h
+driver.o: driver.c mylib.h
 	gcc -c driver.c
 
-oof.o: oof.c oof.h
-	gcc -c oof.c
-
-foo.o: foo.c foo.h
-	gcc -c foo.c
+oof.o: mylib.c mylib.h
+	gcc -c mylib.c
 
 clean:
 	rm *.o
