@@ -1,11 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-char *strchr( char *s, char c ){
+char *my_strchr( char *s, char c ){
+  while(*s){
+    if(c == *s){
+      return s;
+    }
+  }
+  return NULL;
 }
 
-char *strcpy( char *dest, char *source ) {
+int my_strcmp( char *s1, char *s2 ){
+  
+
 }
 
-char * strstr( char *s1, char * s2 ){
+char * my_strstr( char *s1, char * s2 ){
+  
 }
