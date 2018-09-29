@@ -8,13 +8,13 @@ int my_strlen(char *str){
   return ctr;
 }
 
-char * my_strcpy( char *dest, char *source ){
+char *my_strcpy( char *dest, char *source ){
   for (int i = 0; *(source + i); i++)
     *(dest + i) = *(source + i);
   return dest;
 }
 
-char * my_strncat( char *dest, char *source, int n){
+char *my_strncat( char *dest, char *source, int n){
   char *curr = dest;
   while (*curr)
     curr ++;
@@ -38,12 +38,18 @@ char *my_strchr( char *s, char c ){
 }
 
 int my_strcmp( char *s1, char *s2 ){
-
+  while(*s1 && *s2){
+    if(*s1 != *s2){
+      return (*s1 - *s2);
+    }
+    s1++;
+    s2++;
+  }
   return 0;
 }
 
-char * my_strstr( char *s1, char * s2 ){
-  while(*(s1 + my_strlen(s2))){
+char *my_strstr( char *s1, char *s2 ){
+  while(*(s1)) {
     if(!(my_strcmp(s1,s2))){
       return s1;
     }
