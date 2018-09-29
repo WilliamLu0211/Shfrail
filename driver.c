@@ -9,9 +9,9 @@ int main(){
   char s2[20] = "yurr";
   char *s3 = "shfrail";
 
-  printf("s1: %s\n", s1);
-  printf("s2: %s\n", s2);
-  printf("s3: %s\n\n", s3);
+  printf("s1: [%s]\n", s1);
+  printf("s2: [%s]\n", s2);
+  printf("s3: [%s]\n\n", s3);
 
   printf("Testing strlen(s1):\n");
   printf("[standard]: %zu\n", strlen(s1));
